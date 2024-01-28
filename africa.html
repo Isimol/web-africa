@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+    <html lang="es">
+
+        <head>
+            <title>AFRICA</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+            <link rel="stylesheet" href="custom.css">
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+        </head>
+
+        <body>
+                <!-- CABECERA CON LA IMAGEN PRINCIPAL DE BIENVENDIA-->
+                <div class="bienvenida d-flex align-items-center" id="Home">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center ">
+                                <h1 class="text-white text-center mt-5 border border-left-0 border-right-0 africa display-2">
+                                    ¿Sientes Africa?</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CUERPO PRINCIPAL-->
+                <div class="container">
+                <div class="row">
+
+                    <!-- Aqui va el menú de navegación-->
+                    <nav class="navbar navbar-expand-sm  navbar-dark fixed-top">
+
+                         <!-- La imagen del logotipo para el menú, además con estilo redondeado-->
+                        <a class="navbar-brand" href="#">
+                            <img src="img/LOGOS/logotipo.jpeg" alt="logo" style="width:40px;" class="rounded-circle">
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white africa" href="#Animales">Animales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white africa" href="#Tribus">Tribus</a>
+                                </li>
+                                <!-- Menu desplegable con enlaces a sus respectivas secciones-->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white africa" href="#" id="navbardrop" data-toggle="dropdown">
+                                    PAQUETES
+                                    </a>
+                                    <div class="dropdown-menu">
+                                    <a class="dropdown-item text-white africa" href="#Viajes">VIAJES</a>
+                                    <a class="dropdown-item text-white africa" href="#Safaris">SAFARIS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Sección Animales -->
+                <div class="row" id="Animales">
+                        <h1 class="mt-5 col-12 text-center africa">CONOCE ANIMALES</h1>
+                        <img src="img/ANIMALES/Portada-lion.jpg" alt="imagen animales" class="mt-2 col-12 col-md-6 col-lg-12 order-lg-2">
+                        <p class="col-12 col-md-6 col-lg-12 order-lg-3 mt-3"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Placeat quia quae odit officia a veniam facilis temporibus, quo optio deserunt unde, 
+                            ut consequatur? Totam est iste dolorem, fugit neque modi?</p>
+
+                        <!-- Botón para mostrar/ocultar carrusel, aunque no lo pida la tarea me ha parecido interesante añadirlo -->
+                        <button type="button" class="btn mt-3 btn-block order-lg-1" data-toggle="collapse" data-target="#carruselAnimales"
+                            aria-expanded="false" >
+                            <span class="africa">Mostrar Imagenes</span>
+                        </button>
+
+                        <div id="carruselAnimales" class="carousel slide col-12 collapse order-lg-1" data-ride="carousel">
+
+                            <!-- Indicatores -->
+                            <ul class="carousel-indicators">
+                                <li data-target="#carruselAnimales" data-slide-to="0" class="active"></li>
+                                <li data-target="#carruselAnimales" data-slide-to="1"></li>
+                                <li data-target="#carruselAnimales" data-slide-to="2"></li>
+                                <li data-target="#carruselAnimales" data-slide-to="3"></li>
+                                <li data-target="#carruselAnimales" data-slide-to="4"></li>
+                                
+                            </ul>
+
+                            <!-- Imagenes del carrusel -->
+                            <div class="carousel-inner col-12 col-md-12 col-lg-12 text-center">
+                                <div class="carousel-item active">
+                                    <img src="img/ANIMALES/elephant-1.jpg" alt="Elefante">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/ANIMALES/giraffe-2.jpg" alt="Jirafa">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/ANIMALES/leopard-3.jpg"alt="Leopardo">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/ANIMALES/yellow-mongoose-4.jpg"alt="Mongoose">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/ANIMALES/zebras-5.jpg"alt="Zefra">
+                                </div>
+                            </div>
+
+                            <!-- Izquierda y derecha con controles de teclado -->
+                            <a class="carousel-control-prev" href="#carruselAnimales" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#carruselAnimales" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Sección Tribus -->
+
+                    <div class="row" id="Tribus">
+
+                        <h1 class="col-12 mt-5 text-center africa">DESCUBRE TRIBUS</h1>
+                        <img src="img/TRIBUS/Portada-tribu.jpg" alt="imagen tribus" class="mt-2 col-12 col-md-6 col-lg-12 order-md-2 order-lg-2 rounded-circle">
+                        <p class="col-12 col-md-6 col-lg-12 order-md-1 order-lg-3 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quo adipisci eaque reprehenderit vero provident, natus ullam cum excepturi iste delectus dolor,
+                            ab ea molestias recusandae laboriosam quam sapiente similique dolores.</p>
+
+                        <!-- Botón para mostrar/ocultar carrusel -->
+                        <button type="button" class="btn mt-3 btn-block order-md-3 order-lg-1" data-toggle="collapse" data-target="#carruselTribus"
+                            aria-expanded="false" aria-controls="carruselAnimales">
+                            <span class="africa">Mostrar Imagenes</span>
+                        </button>
+
+                        <div id="carruselTribus" class="carousel slide col-12 collapse order-lg-1" data-ride="carousel">
+
+                            <!-- Indicatores -->
+                            <ul class="carousel-indicators">
+                                <li data-target="#carruselTribus" data-slide-to="0" class="active"></li>
+                                <li data-target="#carruselTribus" data-slide-to="1"></li>
+                                <li data-target="#carruselTribus" data-slide-to="2"></li>
+                                <li data-target="#carruselTribus" data-slide-to="3"></li>
+                                <li data-target="#carruselTribus" data-slide-to="4"></li>  
+                            </ul>
+
+                            <!-- Imagenes del carrusel -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/TRIBUS/hadzabe-1.jpg" alt="Los Angeles">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/TRIBUS/maasai-2.jpg" alt="Chicago">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/TRIBUS/maasai-3.jpg" alt="New York">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/TRIBUS/maasai-4.jpg" alt="New York">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/TRIBUS/masai-5.jpg" alt="New York">
+                                </div>
+                            </div>
+
+                            <!-- Izquierda y derecha con controles de teclado -->
+                            <a class="carousel-control-prev" href="#carruselTribus" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#carruselTribus" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Sección Viajes -->
+                    <div class="row" id="Viajes">
+                        <h1 class=" mt-5 col-12 text-center africa">DISFRUTA EL VIAJE</h1>
+                        
+                            <P class="col-12 col-md-6 col-lg-12 order-md-2 order-lg-2 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quo adipisci eaque reprehenderit vero provident, natus ullam cum excepturi iste delectus dolor,
+                                ab ea molestias recusandae laboriosam quam sapiente similique dolores</P>
+
+                            <!-- Introducción del video en 16:9 aspect ratio como indica la tarea !-->
+                            <div class="embed-responsive embed-responsive-16by9 col-12 col-md-6 col-lg-12 order-md-1 order-lg-1">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/w4y3lLrqlTQ"></iframe>
+                            </div>
+
+                            <div class="mt-4 col-12 order-3">
+
+                                    <button type="button" class="btn btn-block mt-3" data-toggle="collapse" data-target="#tabla2"
+                                        aria-expanded="false">
+                                        <span class="africa">Mostrar Viajes</span>
+                                    </button>
+                    
+                                <!-- Tabla responsive con striped -->
+                                <div id="tabla2" class="table-responsive collapse mt-3 col-12">
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>PAQUETE</th>
+                                                <th>DURACION</th>
+                                                <th>OPCIONES</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Paraiso</td>
+                                                <td>7 días</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-modal text-white" data-toggle="modal"
+                                                        data-target="#mostrarl">
+                                                        Mostrar Más
+                                                    </button>
+                    
+                                                    <!-- Uso un Modal para darle un toque diferenciador (aunque no se pida en la tarea) -->
+                                                    <div class="modal fade" id="mostrarl">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title">DETALLE DEL PAQUETE...</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <!-- Contenido del modal-->
+                                                                    <img src="img/VIAJES/viaje-1.jpg" alt="Imagen"
+                                                                        class="img-fluid">
+                                                                    <p>FORMULARIO DE CONTACTO (no implementado)</p>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">Cerrar</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Romántico</td>
+                                                <td>15 días</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-modal text-white" data-toggle="modal"
+                                                        data-target="#mostrar2">
+                                                        Mostrar Más
+                                                    </button>
+                    
+                                                    <!-- Uso un Modal para darle un toque diferenciador (aunque no se pida en la tarea) -->
+                                                    <div class="modal fade" id="mostrar2">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title">DETALLE DEL PAQUETE...</h5>
+                                                                    <button type="button" class="close" data-dismiss="modaL2"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <!-- Contenido del modal-->
+                                                                    <img src="img/VIAJES/viaje-2.jpg" alt="Imagen" class="img-fluid">
+                                                                    <p>FORMULARIO DE CONTACTO (no implementado)</p>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">Cerrar</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Aventura</td>
+                                                <td>30 días</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-modal text-white" data-toggle="modal"
+                                                        data-target="#mostrar3">
+                                                        Mostrar Más
+                                                    </button>
+                    
+                                                    <!-- Uso un Modal para darle un toque diferenciador (aunque no se pida en la tarea) -->
+                                                    <div class="modal fade" id="mostrar3">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title">DETALLE DEL PAQUETE...</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal"
+                                                                        aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <!-- Contenido del modal -->
+                                                                    <img src="img/VIAJES/viaje-3.jpg" alt="Imagen" class="img-fluid">
+                                                                    <p>FORMULARIO DE CONTACTO (no implementado)</p>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">Cerrar</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                        </div>
+                    </div>
+                <!-- Sección Safaris Africanos -->
+                    <div class="row" id="Safaris">
+                        <h1 class=" mt-5 col-12 text-center africa">SAFARIS EMOCIONANTES</h1>
+                        <img src="img/SAFARIS/portada-safari.jpg" alt="safari"
+                            class="col-12 col-md-6 col-lg-12 order-md-2 order-lg-2 rounded-circle">
+                        <p class="col-12 col-md-6 col-lg-12 order-md-1 order-lg-1">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Quo adipisci eaque reprehenderit vero provident, natus ullam cum excepturi iste delectus dolor,
+                            ab ea molestias recusandae laboriosam quam sapiente similique dolores</p>
+
+                        
+                        <div class="mt-4 col-12 order-3">
+
+                                <button type="button" class="btn btn-block mt-3 mb-3" data-toggle="collapse" data-target="#tabla1"
+                                    aria-expanded="false">
+                                    <span class="africa">Mostrar SAFARIS</span>
+                                </button>
+
+                            <!-- Tabla responsive con striped -->
+                            <div id="tabla1" class="table-responsive collapse mt-3 col-12">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>PAQUETE</th>
+                                            <th>DURACION</th>
+                                            <th>OPCIONES</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Paraiso</td>
+                                            <td>7 días</td>
+                                            <td>
+                                                <button type="button" class="btn btn-modal text-white" data-toggle="modal"
+                                                    data-target="#mostrar4">
+                                                    Mostrar Más
+                                                </button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="mostrar4">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title">DETALLE DEL PAQUETE...</h5>
+                                                                <button type="button" class="close" data-dismiss="modal"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <!-- Contenido del modal-->
+                                                                <img src="img/SAFARIS/safari-1.jpg" alt="Imagen"
+                                                                    class="img-fluid">
+                                                                <p>FORMULARIO DE CONTACTO (no implementado)</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                    data-dismiss="modal">Cerrar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Romántico</td>
+                                            <td>15 días</td>
+                                            <td>
+                                                <button type="button" class="btn btn-modal text-white" data-toggle="modal"
+                                                    data-target="#mostrar5">
+                                                    Mostrar Más
+                                                </button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="mostrar5">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title">DETALLE DEL PAQUETE...</h5>
+                                                                <button type="button" class="close" data-dismiss="modal2"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <!-- Contenido del modal -->
+                                                                <img src="img/SAFARIS/safari-2.jpg" alt="Imagen" class="img-fluid">
+                                                                <p>FORMULARIO DE CONTACTO (no implementado)</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                    data-dismiss="modal">Cerrar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aventura</td>
+                                            <td>30 días</td>
+                                            <td>
+                                                <button type="button" class="btn btn-modal text-white" data-toggle="modal"
+                                                    data-target="#mostrar6">
+                                                    Mostrar Más
+                                                </button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="mostrar6">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title">DETALLE DEL PAQUETE...</h5>
+                                                                <button type="button" class="close" data-dismiss="modal"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <!-- Contenido del modal-->
+                                                                <img src="img/SAFARIS/safari-3.jpg" alt="Imagen" class="img-fluid">
+                                                                <p>FORMULARIO DE CONTACTO (no implementado)</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                    data-dismiss="modal">Cerrar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- footer de la página (auque la tarea no lo pedía pero el cuerpo si ;-) para dejarla medio decente)-->
+                <footer class="text-center text-lg-start">
+                    <section class="d-flex justify-content-center justify-content text-white">
+                        <div class="container text-center text-md-start mt-5">
+                          <div class="row mt-3">
+                            <div class="col-md-3 col-lg-3">
+                              <h6>COMPAÑIA</h6>
+                              <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Soluta, nesciunt eaque suscipit maxime dignissimos inventore aliquam adipisci voluptas repellat quas 
+                             
+                              </p>
+                            </div>
+        
+                            <div class="col-md-3 col-lg-3">
+                              <h6>SECCIONES</h6>
+                              <p>
+                                <a href="#Animales" class="text-white">Animales</a>
+                              </p>
+                              <p>
+                                <a href="#Tribus" class="text-white">Tribus</a>
+                              </p>
+                              <p>
+                                <a href="#Viajes" class="text-white">Viajes</a>
+                              </p>
+                              <p>
+                                <a href="#Safaris" class="text-white">Safaris</a>
+                              </p>
+                            </div>
+
+                            <div class="col-md-3 col-lg-3">
+                              <h6>LINKS DE INTERES</h6>
+                              <p>
+                                <a href="" class="text-white">Ayuda</a>
+                              </p>
+                              <p>
+                                <a href="" class="text-white">Mapa Web</a>
+                              </p>
+                              <p>
+                                <a href="" class="text-white">Telefonos</a>
+                              </p>
+                              <p>
+                                <a href="#!" class="text-white">Embajadas</a>
+                              </p>
+                            </div>
+
+                            <div class="col-md-3 col-lg-3">
+                              <h6>CONTACTO</h6>
+                              <p class="text-white">IES Carlos III, cartagena, Murcia</p>
+                              <p>africa@carlosiii.com</p>
+                              <p>+ 36 968 111 22</p>
+                              <p>+ 56 968 222 33</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    <div class="text-center p-2 text-white">
+                      © 2024 Copyright
+                    </div>
+                  </footer>
+
+
+            </body>
+    </html>
